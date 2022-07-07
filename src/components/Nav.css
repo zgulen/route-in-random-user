@@ -1,0 +1,35 @@
+nav{
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+img{
+    width: 175px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 4rem;
+}
+li{
+    margin: 1rem;
+}
+
+li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+li:hover{
+    border-left: 3px solid white;
+}
+
+@media (max-width:600px) {
+    ul{
+        flex-wrap:wrap;
+    }
+    
+}

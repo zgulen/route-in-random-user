@@ -1,0 +1,9 @@
+footer{
+    text-align: center;
+    background-color: blanchedalmond;
+    margin-top: -1rem;
+    height: calc(100vh - 90vh);
+}
+.copy{
+    padding-top: 2rem;
+}

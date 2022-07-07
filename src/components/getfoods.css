@@ -1,0 +1,23 @@
+main{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 175px);
+    text-align: center;
+}
+
+button{
+    width: 170px;
+    padding: 1rem;
+    background-color: yellow;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5),1px 1px 5px rgba(0, 0, 0, 0.3),1px 1px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.food{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
