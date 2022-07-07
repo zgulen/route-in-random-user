@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import CardDetail from "./pages/CardDetail";
+import FoodDetail from './pages/FoodDetail';
 
 
 
@@ -13,16 +14,17 @@ import CardDetail from "./pages/CardDetail";
 function App() {
   return (
     <>
-    <Nav />
-    <BrowserRouter>
-      <Routes>
-        <Route path={"/"} element={<Home />} />
-        <Route path={"/about"} element={<About />} />
-        <Route path={"/contact"} element={<Contact />} />
-        <Route path={"/foods"} element={<CardDetail />} />
-      </Routes>
-    </BrowserRouter>
-    <Footer />
+      <BrowserRouter>
+      <Nav />
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/foods"} element={<CardDetail />} />
+          <Route path={"/foods/:idMeal"} element={<FoodDetail />} />
+        </Routes>
+      <Footer />
+      </BrowserRouter>
 
     </>
   );

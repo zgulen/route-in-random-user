@@ -21,8 +21,19 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
+  background-color: rgb(250, 228, 200);
+  padding-top: 1rem;
 }
 
 .food-card{
-  width: 200px;
+  width: 340px;
+  background-color: rgb(211, 230, 49);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  color: purple;
+  cursor: pointer;
+}
+
+.img-card{
+  width: 190px;
 }
