@@ -1,12 +1,12 @@
 import React from "react";
-import { Navigate, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import "./Nav.css"
 
 const Nav = () => {
     return (
         <nav>
             <img src="./logo.png" alt="Food Truck" />
-            <ul>
+            <ul className="nav">
                 <li>
                     <Link to="/">Home</Link>
                 </li>

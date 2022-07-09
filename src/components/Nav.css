@@ -9,7 +9,7 @@ img{
     width: 175px;
 }
 
-ul{
+.nav{
     display: flex;
     list-style-type: none;
     margin-right: 4rem;

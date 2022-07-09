@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Outlet } from "react-router-dom";
 import axios from "axios"
+
 
 const FoodDetail = () => {
     const { idMeal } = useParams();
@@ -17,19 +18,20 @@ const FoodDetail = () => {
     }
     useEffect(()=>{
         getFood()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [idMeal])
-    console.log(food);
-    console.log(idMeal);
-  return (
-    <div>
+
+    return (
+        <div clasname="foodd" >
        {food?.map((item,index)=>{
-        return (
-            <div>
+           return (
+            <div key={index} onClick={()=> navigate(`/foods/${idMeal}/${item.strMeal}`)}>
                 <h1>{item.strMeal}</h1>
                 <img src={item.strMealThumb} alt="" />
             </div>
         )
        })}
+       <Outlet/>
     </div>
   )
 }

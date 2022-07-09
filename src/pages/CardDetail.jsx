@@ -3,6 +3,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
 const CardDetail = () => {
     const navigate = useNavigate();
 
@@ -29,7 +31,7 @@ const CardDetail = () => {
                 const { strMeal, strMealThumb, idMeal } = items;
                 return (
                     <div 
-                    onClick={() => navigate(`/foods/${idMeal}`)}
+                    onClick={() => (navigate(`/foods/${idMeal}`))}
                     key={idMeal} 
                     className="food-card">
                         <h3>{strMeal}</h3>
